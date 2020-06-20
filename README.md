@@ -10,3 +10,9 @@ Example:
  <li>Kawartha Lakes (Fenelon Falls)</li>
  <li>Kawartha Lakes (Lindsay)</li>
 </ul>
+
+<h2>What can be added</h2>
+
+<ul>
+ <li>Other provinces</li>
+</ul>
