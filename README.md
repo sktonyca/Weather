@@ -6,5 +6,7 @@ Need Fixing
 Some cities has extra characters at the end which is not accepted yet
 
 Example:
-Kawartha Lakes (Fenelon Falls)
-Kawartha Lakes (Lindsay)
+<ul>
+ <li>Kawartha Lakes (Fenelon Falls)</li>
+ <li>Kawartha Lakes (Lindsay)</li>
+</ul>
