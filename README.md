@@ -9,6 +9,7 @@ Example:
 <ul>
  <li>Kawartha Lakes (Fenelon Falls)</li>
  <li>Kawartha Lakes (Lindsay)</li>
+ <li>.etc</li>
 </ul>
 
 <h2>What can be added</h2>
