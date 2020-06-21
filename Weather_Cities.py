@@ -1,39 +1,44 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Scraping Data (It only has Cities from Ontario)
-URL = "https://weather.gc.ca/forecast/canada/index_e.html?id=ON"
-page = requests.get(URL)
-soup = BeautifulSoup(page.content, 'html.parser')
-list = soup.find_all("ul", "list-unstyled col-sm-4")
 
-# Create temperary list
-temp = []
+def scarpData():
+    # Scraping Data (It only has Cities from Ontario)
+    URL = "https://weather.gc.ca/forecast/canada/index_e.html?id=ON"
+    page = requests.get(URL)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    list = soup.find_all("ul", "list-unstyled col-sm-4")
 
-# Add items to the temperary list
-for x in range(len(list)):
-    temp.append(list[x].findChildren())
+    # Create temperary list
+    temp = []
 
-# Erase List
-list = None
+    # Add items to the temperary list
+    for x in range(len(list)):
+        temp.append(list[x].findChildren())
 
-# Re-using the list to add all elements into one section
-list = []
-for sublist in temp:
-    for item in sublist:
-        list.append(item)
+    # Erase List
+    list = None
 
-# Erase List
-temp = None
+    # Re-using the list to add all elements into one section
+    list = []
+    for sublist in temp:
+        for item in sublist:
+            list.append(item)
 
-# Make a dictionary of cities
-list_city = dict()
+    # Erase List
+    temp = None
 
-# Delete duplicate elements
-del list[::2]
-print(list)
+    # Make a dictionary of cities
+    list_city = dict()
 
-# Set name as position and link as value
-for city in list:
-    list_city[city.text] = "https://weather.gc.ca"+str(city.get("href"))
-print(list_city)
+    # Delete duplicate elements
+    del list[::2]
+    print(list)
+
+    # Set name as position and link as value
+    for city in list:
+        list_city[city.text] = "https://weather.gc.ca"+str(city.get("href"))
+    return(list_city)
+
+
+scarpData()

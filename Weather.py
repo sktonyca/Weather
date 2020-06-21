@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-from Weather_Cities import list_city
+from Weather_Cities import scarpData
+
+# Call the scarp function to retrieve cities
+list_city = scarpData()
 
 # Ask Location
 correct = False
