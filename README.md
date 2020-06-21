@@ -17,3 +17,7 @@ Example:
 <ul>
  <li>Other provinces</li>
 </ul>
+
+<h2>Change log</h2>
+<ul>
+ <li>2020-06-21: Added missing cities</li>
