@@ -20,4 +20,4 @@ Example:
 
 <h2>Change log</h2>
 <ul>
- <li>Added missing cities 2020-06-21</li>
+ <li>2020-06-21: Added missing cities</li>
