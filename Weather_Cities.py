@@ -7,7 +7,7 @@ page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 list = soup.find_all("ul", "list-unstyled col-sm-4")
 
-# Create temperary list with three list in it
+# Create temperary list
 temp = []
 
 # Add items to the temperary list
