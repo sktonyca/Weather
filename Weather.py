@@ -1,13 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
-from Weather_Cities import scarpData
 
 # Call the scarp function to retrieve cities
 #list_city = scarpData()
 
 # Ask Location
 
-user_Input = input("Enter the name of the city\n")
+user_Input = input(
+    "Enter the name of the city \nei) City, Province Abbreviation\n")
 URL = "https://weather.gc.ca/city/jump_e.html?city="+user_Input+"&lang=e"
 
 # Access Weather Data
