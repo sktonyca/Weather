@@ -1,6 +1,5 @@
 # Weather
  Tells you the weather of cities in Canada
- <br>Currently Ontario only
 
 <h2>Need Fixing</h2> 
 
