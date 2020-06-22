@@ -3,19 +3,15 @@ from bs4 import BeautifulSoup
 from Weather_Cities import scarpData
 
 # Call the scarp function to retrieve cities
-list_city = scarpData()
+#list_city = scarpData()
 
 # Ask Location
-correct = False
-while correct == False:
-    user_Input = input("Enter the name of the city\n").title()
-    if user_Input not in list_city:
-        print("It is not a valid city")
-        continue
-    break
+
+user_Input = input("Enter the name of the city\n")
+URL = "https://weather.gc.ca/city/jump_e.html?city="+user_Input+"&lang=e"
 
 # Access Weather Data
-page = requests.get(list_city[user_Input])
+page = requests.get(URL)
 soup = BeautifulSoup(page.content, 'html.parser')
 
 # Get Location
