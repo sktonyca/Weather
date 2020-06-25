@@ -44,7 +44,7 @@ while True:
 try:
     location = soup.find("h1", id="wb-cont").get_text()
     temp = soup.find("span", class_="wxo-metric-hide").get_text()
-    print(location)
+    print("\n"+location.rstrip())
     print(temp)
 except:
     print("Temperature is currently unavaliable at this location")
@@ -53,9 +53,9 @@ except:
 try:
     x = soup.find("dl", class_="dl-horizontal wxo-conds-col1")
     x = x.find_all("dd")
-    print("Condition ", x[0].get_text())
-    print("Pressure " + x[1].get_text())
-    print("Tendency ", x[2].get_text())
+    print("Condition: ", x[0].get_text())
+    print("Pressure: " + x[1].get_text().rstrip())
+    print("Tendency: ", x[3].get_text())
 
 except:
     print("Condition is currently unavaliable at this location")
