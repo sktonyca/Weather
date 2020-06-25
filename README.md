@@ -6,7 +6,6 @@
 
 <h2>What can be added</h2>
 <ul>
- <li>Condition</li>
  <li>Forecast for a week</li>
  <li>Graphic Interface</li>
 </ul>
