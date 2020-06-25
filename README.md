@@ -26,7 +26,7 @@
  <li>2020-06-25:
   <ul>
    <li>Able to resolve cities with multiple option</li> 
-    <li>Can resolve non-valid input</li>
+    <li>Able to resolve non-valid input</li>
    </ul>
   </li>
 </ul>
