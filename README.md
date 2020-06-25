@@ -16,5 +16,10 @@
 <ul>
  <li>2020-06-21: Added missing cities</li>
  <li>2020-06-22: Instead of saving all the cities, changed to search cities in the website</li>
- <li>2020-06-25: Fixed not being able to resolve cities with multiple option, can now process non-valid names</li>
+ <li>2020-06-25:
+  <ul>
+   <li>Fixed not being able to resolve cities with multiple option</li> 
+    <li>can now process non-valid names</li>
+   </ul>
+  </li>
 </ul>
