@@ -12,7 +12,8 @@ while True:
     soup = BeautifulSoup(page.content, 'html.parser')
 
     # If there is multiple option avaliable or city name is invalid
-    if soup.find("label", {"accesskey": "g"}).get_text() == "Please try again":
+    if soup.find("h1").get_text() == "Change city result":
+        print(soup.find("label", {"accesskey": "g"}).get_text())
         # If city name is invalid
         if str(soup.find("main", class_="container")).find("No match found for") != -1:
             print("Input is invalid")
@@ -36,7 +37,8 @@ while True:
                 break
             break
         continue
-    break
+    else:
+        break
 
 # Get Location
 location = soup.find("h1", id="wb-cont").get_text()
