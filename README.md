@@ -25,8 +25,8 @@
  </li>
  <li>2020-06-25:
   <ul>
-   <li>Fixed not being able to resolve cities with multiple option</li> 
-    <li>can now process non-valid names</li>
+   <li>Able to resolve cities with multiple option</li> 
+    <li>Can resolve non-valid input</li>
    </ul>
   </li>
 </ul>
