@@ -14,8 +14,16 @@
 
 <h2>Change log</h2>
 <ul>
- <li>2020-06-21: Added missing cities</li>
- <li>2020-06-22: Instead of saving all the cities, changed to search cities in the website</li>
+ <li>2020-06-21: 
+  <ul>
+   <li>Added missing cities</li>
+  </ul>
+ </li>
+ <li>2020-06-22: 
+  <ul>
+   <li>Instead of saving all the cities, changed to search cities in the website</li>
+  </ul>
+ </li>
  <li>2020-06-25:
   <ul>
    <li>Fixed not being able to resolve cities with multiple option</li> 
