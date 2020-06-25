@@ -2,6 +2,7 @@
  Tells you the weather of cities in Canada
 
 <h2>Need Fixing</h2> 
+<p>None</p>
 
 <h2>What can be added</h2>
 
