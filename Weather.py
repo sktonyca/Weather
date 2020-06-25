@@ -22,7 +22,7 @@ while True:
             x = soup.find_all("ul")[3].findChildren()
             del x[::2]
             for i in range(len(x)):
-                print(i+1, x[i].get_text())
+                print(str(i+1)+". "+x[i].get_text())
             # Get input until valid option is given
             while True:
                 try:
@@ -40,19 +40,22 @@ while True:
     else:
         break
 
-# Get Location
-location = soup.find("h1", id="wb-cont").get_text()
-print(location)
-
-# Get Temperature
+# Get location and temperature
 try:
+    location = soup.find("h1", id="wb-cont").get_text()
     temp = soup.find("span", class_="wxo-metric-hide").get_text()
+    print(location)
     print(temp)
 except:
     print("Temperature is currently unavaliable at this location")
 
 # Get Condition
-# try:
-    #condition = soup.find("dd", class_="mrgn-bttm-0").get_text()
-# except:
-    #print("Condition is currently unavaliable at this location")
+try:
+    x = soup.find("dl", class_="dl-horizontal wxo-conds-col1")
+    x = x.find_all("dd")
+    print("Condition ", x[0].get_text())
+    print("Pressure " + x[1].get_text())
+    print("Tendency ", x[2].get_text())
+
+except:
+    print("Condition is currently unavaliable at this location")
