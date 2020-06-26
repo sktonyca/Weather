@@ -26,6 +26,7 @@ while True:
             # Get input until valid option is given
             while True:
                 try:
+                    # Show options for cities
                     user_Input = x[int(
                         input("Select from the options above\n"))-1].get_text()
                     URL = "https://weather.gc.ca/city/jump_e.html?city="+user_Input+"&lang=e"
