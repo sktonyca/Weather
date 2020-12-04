@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 
 while True:
     # Ask Location
-    user_Input = input(
-        "Enter the name of the city\n")
+    user_Input = input("Enter the name of the city\n")
     URL = "https://weather.gc.ca/city/jump_e.html?city="+user_Input+"&lang=e"
 
     # Access Weather Data
